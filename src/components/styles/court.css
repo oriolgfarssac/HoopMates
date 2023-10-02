@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,8 +14,8 @@ body {
 
 .mainContainer11 {
     flex: 1;
+    overflow-y: auto; /* Enable content scrolling if needed */
     background-color: #ac9fff;
-    overflow-y: auto; /* Allow content to scroll if it overflows */
 }
 
 .mainContainer{
