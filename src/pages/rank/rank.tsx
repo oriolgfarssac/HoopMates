@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import "../../styles/rank.css"
-import Ranking from '../../components/ranking';
 
 const rank: React.FC = () => {
   return (
@@ -12,7 +11,7 @@ const rank: React.FC = () => {
         <img src="/icons/ajustes.png" className='account'/>
       </header>
       <ol className='list'>
-      <li className='item'><Ranking></Ranking></li>
+      <li className='item'></li>
       </ol>
     <footer className='footer'>
       <Link to="/courts/" className='navIcon'><img src="/icons/main.png" alt="" className='navIcon'/></Link>
