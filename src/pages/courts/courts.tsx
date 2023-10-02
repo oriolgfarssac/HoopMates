@@ -26,13 +26,13 @@ const Courts: React.FC = () => {
       </li>
 ))}
       </ol>
-    <footer className='footer'>
+    <div className='footer'>
       <Link to="/courts/" className='navIcon'><img src="/icons/main.png" alt="" className='navIcon'/></Link>
       <Link to="/rank/" className='navIcon'><img src="/icons/trofeo.png" alt="" className='navIcon'/></Link>
       <Link to="/hotCourts/" className='navIcon'><img src="/icons/pelota.png" alt="" className='navIcon'/></Link>
       <Link to="/chat/" className='navIcon'><img src="/icons/chat.png" alt="" className='navIcon'/></Link>
       <Link to="/configuration/" className='navIcon'><img src="/icons/help.png" alt="" className='navIcon'/></Link>
-    </footer>
+    </div>
     </main>
   );
 };
