@@ -1,8 +1,9 @@
 body {
-    overflow: hidden;
+    overflow-x: none;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
     margin: 0;
 }
 
