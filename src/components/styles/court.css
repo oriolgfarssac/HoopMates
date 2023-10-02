@@ -1,5 +1,16 @@
-body{
+body {
     overflow: hidden;
+    margin: 0; /* Reset default body margin */
+}
+
+.header, .footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mainContainer11 {
+    width: 100%;
+    height: calc(100vh - 140px); /* Adjust for header (70px) + footer (70px) height */
+    background-color: #ac9fff;
 }
 
 .mainContainer{
