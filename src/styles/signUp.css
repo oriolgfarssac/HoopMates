@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'YourFontName';
+    src: url('/fonts/sf-compact-font-family/SF-Compact-Display-Heavy.ttf');
+}
+
+main{
+    font-family: 'YourFontName', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #5043A8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.google-logo{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.google-button{
+    color: white;
+    background-color: #2F2562;
+    width: 85%;
+    min-height: 50px;
+    height: auto;
+    border: solid 3px #2F2562;
+    border-radius: 5px;
+}
+
+.input{
+    background-color: white;
+    width: 85%;
+    min-height: 50px;
+    height: auto;
+    border: solid 3px #2F2562;
+    border-radius: 5px;
+}
+
+.signIn-button{
+    color: white;
+    background-color: #2F2562;
+    width: 85%;
+    min-height: 50px;
+    height: auto;
+    border: solid 3px #2F2562;
+    border-radius: 5px;
+}
+
+.passwordForget{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgUser{
+    width: 75px;
+}

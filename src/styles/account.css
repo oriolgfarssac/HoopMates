@@ -1,0 +1,97 @@
+body{
+    background-color: #5043A8;
+}
+
+.profileMain{
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.profileTitle{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+
+.profileImg{
+    width: 35%;
+    height: auto;
+    border-radius: 100px;
+    background-color: white;
+    border: solid 5px white;
+    margin-bottom: 15px;
+}
+
+.textImg{
+    font-weight: bolder;
+    color: white;
+    background-color:#2F2562;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Username{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameUser{
+    font-size: 20px;
+    color: white;
+}
+
+.userInput{
+    height: 35px;
+    width: 65%;
+    margin-inline: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.userOption{
+    max-width: 60%;
+}
+
+.saveButton{
+    border: none;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    background-color: #2F2562;
+    width: 65%;
+    min-height: 50px;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.closeButton1{
+    text-decoration: none;
+    border: none;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    background-color: #622525;
+    width: 65%;
+    min-height: 50px;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px; 
+}
+
+#file-upload-button{
+    width: 40%;
+}

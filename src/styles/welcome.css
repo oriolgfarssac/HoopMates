@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'YourFontName';
+    src: url('/fonts/sf-compact-font-family/SF-Compact-Display-Heavy.ttf');
+}
+
+#mainDiv{
+    font-family: 'YourFontName', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #5043A8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.button{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    background-color: #2F2562;
+    width: 65%;
+    min-height: 50px;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.img1{
+    margin-top: 0px;
+    width: 200px;
+    height: auto;
+}
+
+.slogan{
+    color: white;
+}

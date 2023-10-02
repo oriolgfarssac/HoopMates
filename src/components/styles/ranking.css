@@ -1,0 +1,25 @@
+.rankInfo{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 65px;
+    background-color: #6c61b9;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.userImg{
+    width: auto;
+    height: auto;
+}
+
+.userName{
+    width: auto;
+    height: auto;
+}
+
+.userScore{
+    width: auto;
+    height: auto;
+}
