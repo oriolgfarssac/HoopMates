@@ -1,60 +1,22 @@
-/* Reset default browser styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-}
-
 body {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0;
 }
 
-/* Your existing styles for .mainContainer11 and other elements can remain the same */
+.header, .footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    width: 100%;
+    background-color: #5143a8;
+}
 
 .mainContainer11 {
     flex: 1;
     background-color: #ac9fff;
-    overflow-y: auto;
-}
-
-/* Additional styles for header and footer */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #5143a8;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    z-index: 1; /* Place header above content */
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    align-items: center;
-    background-color: #5143a8;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    z-index: 1; /* Place footer above content */
-}
-
-/* Ensure the main content doesn't overlap with the header and footer */
-.mainContainer11 {
-    padding-top: 70px; /* Adjust for header height */
-    padding-bottom: 70px; /* Adjust for footer height */
+    overflow-y: auto; /* Allow content to scroll if it overflows */
 }
 
 .mainContainer{
@@ -217,11 +179,6 @@ body {
     border-top-right-radius: 10px;
     padding: 0px;
     align-items: center;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    height: 70px; /* Adjust the height as needed */
-    z-index: 2; /* Adjust the z-index if needed */
 }
 
 .navIcon{
