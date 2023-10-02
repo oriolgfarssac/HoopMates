@@ -1,4 +1,5 @@
 .mainContainer11 {
+    height: 100vh;
     flex: 1;
     background-color: #ac9fff;
     overflow-y: auto; /* Allow content to scroll if it overflows */

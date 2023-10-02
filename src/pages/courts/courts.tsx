@@ -1,4 +1,4 @@
-import '../../styles/courts.css'
+import '../../components/styles/court.css'
 import React from 'react';
 import Court from '../../components/court';
 import courtsInfo from '../../data/courtsInfo';
