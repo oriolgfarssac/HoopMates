@@ -2,7 +2,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -14,9 +14,11 @@ body {
 }
 
 .mainContainer11 {
-    flex: 1; /* Expand and fill the remaining vertical space */
+    flex: 1;
     background-color: #ac9fff;
+    overflow-y: auto; /* Allow content to scroll if it overflows */
 }
+
 .mainContainer{
     padding: 10px;
     display: flex;
