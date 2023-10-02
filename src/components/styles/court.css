@@ -1,18 +1,22 @@
 body {
     overflow: hidden;
-    margin: 0; /* Reset default body margin */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0;
 }
 
 .header, .footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    width: 100%;
+    background-color: #5143a8;
 }
 
 .mainContainer11 {
-    width: 100%;
-    height: calc(100vh - 140px); /* Adjust for header (70px) + footer (70px) height */
+    flex: 1; /* Expand and fill the remaining vertical space */
     background-color: #ac9fff;
 }
-
 .mainContainer{
     padding: 10px;
     display: flex;
@@ -179,4 +183,3 @@ body {
     height: 35px;
     width: 35px;
 }
-
