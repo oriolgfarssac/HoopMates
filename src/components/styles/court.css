@@ -6,13 +6,6 @@ body {
     margin: 0;
 }
 
-.header, .footer {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    height: 70px;
-    width: 100%;
-    background-color: #5143a8;
-}
-
 .mainContainer11 {
     flex: 1;
     background-color: #ac9fff;
@@ -179,6 +172,7 @@ body {
     border-top-right-radius: 10px;
     padding: 0px;
     align-items: center;
+    margin-bottom: auto;
 }
 
 .navIcon{
