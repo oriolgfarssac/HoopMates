@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import WelcomePage from '../pages/welcome/welcome';
 import SignUp from '../pages/signUp/signUp';
-import Rank from '../pages/rank/rank';
+import Rank from '../pages/users/users';
 import Courts from '../pages/courts/courts';
 import HotCourts from '../pages/hotCourts/hotCourts';
 import Chat from '../pages/chat/chat';

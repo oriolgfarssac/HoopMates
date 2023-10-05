@@ -63,7 +63,7 @@ const signUp = () =>{
             user.loged = true;
             localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
             alert('Login success');
-            history('/courts/');
+            history('/account/');
             console.log(storedUsersReal);
           } else {
             alert('Login failed');

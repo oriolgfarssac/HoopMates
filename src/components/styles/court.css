@@ -7,23 +7,22 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: auto;
     min-height: 75px;
     height: auto;
-    background-color: #5143a8;
+    background-color: #f2f2f2;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: center;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
-    border: solid 4px #5143a8;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .name{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 24px;
     width: 100%;
     height: auto;
@@ -74,7 +73,7 @@ body {
 .infoImg{
     height: auto;
     width: 100%;
-    max-width: 348px;
+    max-width: 370px;
     height: auto;
     max-height: 175px;
     min-height: 150px;
@@ -93,7 +92,7 @@ body {
 }
 
 .infoPeople{
-    color: white;
+    color: rgb(0, 0, 0);
     margin-inline: 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -143,7 +142,7 @@ body {
 .t1{
     margin: 0px;
     margin-inline: auto;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .account{
