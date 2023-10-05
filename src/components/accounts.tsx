@@ -1,7 +1,5 @@
 import React from 'react';
 import './styles/accounts.css'
-import {useEffect} from 'react'
-
 interface AccountsProps {
   username: string;
   positon: string;
@@ -9,25 +7,7 @@ interface AccountsProps {
   img: string;
 }
 
-const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, img}) => {
-
-
-useEffect(() => {
-  const getStoredU = localStorage.getItem('usuaris');
-  console.log(getStoredU);
-  let storedUsersReal: any[] = [];
-
-  if (getStoredU) {
-    try {
-      storedUsersReal = JSON.parse(getStoredU);
-    } catch (error) {
-      console.error('Error parsing stored users:', error);
-    }
-  }
-
-}, []);
-
-  
+const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, img}) => { 
 
   return (
     <>
