@@ -23,7 +23,7 @@ const Users: React.FC = () => {
     <main className='mainContainer11'>
       <header className='header'>
         <Link to={'/account/'} className='account'><img src="/icons/usuario.png" className='account' /></Link>
-        <h1 className='t1'>Hoop Courts</h1>
+        <h1 className='t1'>Hoop Players</h1>
         <Link to={''} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
       </header>
       <ol className='list'>

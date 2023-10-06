@@ -11,7 +11,7 @@ body {
     height: auto;
     min-height: 75px;
     height: auto;
-    background-color: #f2f2f2;
+    background-color: #5043A8;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .name{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     width: 100%;
     height: auto;
@@ -92,7 +92,7 @@ body {
 }
 
 .infoPeople{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-inline: 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -142,7 +142,7 @@ body {
 .t1{
     margin: 0px;
     margin-inline: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .account{

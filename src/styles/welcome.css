@@ -33,6 +33,7 @@
     justify-content: center;
     display: flex;
     font-size: 15px;
+    border-style: none;
 }
 
 .img1{

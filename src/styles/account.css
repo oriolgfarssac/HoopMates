@@ -92,23 +92,6 @@ body{
     font-size: 15px;
 }
 
-.closeButton1{
-    text-decoration: none;
-    border: none;
-    font-weight: bolder;
-    text-decoration: none;
-    color: white;
-    background-color: #622525;
-    width: 65%;
-    min-height: 50px;
-    height: auto;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 15px; 
-}
-
 .back{
     display: flex;
     flex-direction: column;
@@ -118,6 +101,6 @@ body{
     padding: 10px;
     min-height: 75%;
     height: auto;
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
     border-radius: 20px;
 }

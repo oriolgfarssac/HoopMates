@@ -30,20 +30,19 @@ const Register: React.FC = () => {
   };
 
   const createAccount = () => {
-    const name: HTMLInputElement | null = document.getElementById('username') as HTMLInputElement | null;
     const email: HTMLInputElement | null = document.getElementById('email') as HTMLInputElement | null;
     const password: HTMLInputElement | null = document.getElementById('password') as HTMLInputElement | null;
 
-    if (name && email && password) {
+    if (email && password) {
       const newUser: User = {
-        userName: name.value,
+        userName: '',
         email: email.value,
         password: password.value,
         loged: false,
         liked: [],
         position: '',
         favourite: '',
-        userImg: '',
+        userImg: '/userImg/profile1.png',
       };
 
       let storedUsers = localStorage.getItem('usuaris');
@@ -51,7 +50,7 @@ const Register: React.FC = () => {
       storedUsersReal.push(newUser);
 
       localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
-      displayAlert("You've been registered correctly! Welcome "+ name.value + "!"+ " Now please Sign In:");
+      displayAlert("You've been registered correctly!" + " Now please Sign In:");
       console.log(storedUsersReal);
     }
   };
@@ -70,8 +69,6 @@ const Register: React.FC = () => {
         <img src="/icons/usuario.png" alt="" className='imgUser'/>
         <br />
         <h1 className='title'>Account Register</h1>
-        <br />
-        <input type="text" placeholder='Username...' className='input' id='username' />
         <br />
         <input type="text" placeholder='Email...' className='input' id='email' />
         <br />
