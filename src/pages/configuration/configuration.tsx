@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Support from "../../components/support";
 
 const configuration = () =>{
 
