@@ -66,12 +66,17 @@ const account = () => {
       const posisio = document.getElementById('position') as HTMLInputElement | null;
       const preferit = document.getElementById('court') as HTMLInputElement | null;
       if(name && posisio && preferit){
+      if(name.value == ""){
+        alert("Please introduce a username.");
+      }
+      else{
         realUser.userName = name.value;
         realUser.position = posisio.value;
         realUser.favourite = preferit.value;
         localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
         console.log(realUser);
         history('/courts/');
+      } 
       } 
     }
   }
@@ -96,9 +101,14 @@ const account = () => {
         <br />
         <h1 className="nameUser">Most Played Court</h1>
         <select name="Position" className="input" id="court">
-          <option value="Big Court Glories" className="userOption">Big Court Glories</option>
-          <option value="Small Court Glories" className="userOption">Small Court Glories</option>
-          <option value="Big Court Poblenou" className="userOption">Big Court Poblenou</option>
+          <option value="Plaça Glòries Gran" className="userOption">Plaça Glòries Gran</option>
+          <option value="Parc del Poblenou" className="userOption">Parc del Poblenou</option>
+          <option value="Plaça Glòries Petita" className="userOption">Plaça Glòries Petita</option>
+          <option value="Parc de la Barceloneta" className="userOption">Parc de la Barceloneta</option>
+          <option value="Parc de l'Espanya" className="userOption">Parc de l'Espanya</option>
+          <option value="Bon Pastor" className="userOption">Bon Pastor</option>
+          <option value="Parc del Clot" className="userOption">Parc del Clot</option>
+          <option value="Escola Industrial" className="userOption">Escola Industrial</option>
         </select>
         <br />
         <br />

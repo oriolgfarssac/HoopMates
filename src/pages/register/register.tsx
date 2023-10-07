@@ -34,6 +34,10 @@ const Register: React.FC = () => {
     const password: HTMLInputElement | null = document.getElementById('password') as HTMLInputElement | null;
 
     if (email && password) {
+    if(email.value == "" || password.value == ""){
+      alert("Please fill the following inputs.");
+    }
+    else{
       const newUser: User = {
         userName: '',
         email: email.value,
@@ -52,6 +56,7 @@ const Register: React.FC = () => {
       localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
       displayAlert("You've been registered correctly!" + " Now please Sign In:");
       console.log(storedUsersReal);
+    }
     }
   };
 
