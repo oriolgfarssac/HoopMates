@@ -16,9 +16,8 @@ const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, img})
       <div id='infoUserDiv'>
         <div className='row1'>
           <h1 className='user-name'>{username}</h1>
-          
         </div>
-        <div className='row1'>
+        <div className='row2'>
           <h3 className='info'>{favourite}</h3>
           <h3 className='info'>{positon}</h3>
         </div>

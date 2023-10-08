@@ -46,7 +46,7 @@ const Register: React.FC = () => {
         liked: [],
         position: '',
         favourite: '',
-        userImg: '/userImg/profile1.png',
+        userImg: '/icons/usuario.png',
       };
 
       let storedUsers = localStorage.getItem('usuaris');

@@ -16,10 +16,11 @@ body{
     margin-top: 30px;
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .profileImg{
+    color: white;
     width: 144px;
     height: auto;
     max-height: 144px;
@@ -31,7 +32,7 @@ body{
 
 .textImg{
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color:#2F2562;
     border: none;
     border-radius: 10px;
@@ -45,7 +46,7 @@ body{
 
 .nameUser{
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .userInput{
