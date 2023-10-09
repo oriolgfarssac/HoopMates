@@ -41,6 +41,10 @@ main{
     border-radius: 5px;
 }
 
+.input:focus{
+    outline: none;
+}
+
 .signIn-button{
     color: white;
     background-color: #2F2562;

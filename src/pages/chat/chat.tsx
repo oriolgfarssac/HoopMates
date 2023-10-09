@@ -8,7 +8,7 @@ const chat = () =>{
       <header className='header'>
         <Link to={'/account/'} className='account'><img src="/icons/usuario.png" className='account' /></Link>
         <h1 className='t1'>Hoopers Chat</h1>
-        <Link to={''} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
+        <Link to={'/settings/'} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
       </header>
       <ol className='list'>
 

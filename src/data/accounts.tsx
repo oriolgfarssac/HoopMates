@@ -9,6 +9,9 @@ const users = [
         position: '',
         favourite: '',
         userImg: 'public/userImg/profile1.png',
+        state: false,
+        instagram: '',
+        twitter: '',
     },
     {
         username: 'Bolet Gegant',
@@ -20,6 +23,9 @@ const users = [
         position: '',
         favourite: '',
         userImg: 'public/userImg/profile2.png',
+        state: false,
+        instagram: '',
+        twitter: '',
     },
     {
         username: 'Maria',
@@ -31,6 +37,9 @@ const users = [
         position: '',
         favourite: '',
         userImg: 'public/userImg/profile3.png',
+        state: false,
+        instagram: '',
+        twitter: '',
     }
 ];
 

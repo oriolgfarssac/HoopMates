@@ -9,7 +9,7 @@ import Configuration from '../pages/configuration/configuration';
 import Register from '../pages/register/register'
 import RestorePassword from '../pages/restorePassword/restorePassword';
 import Account from '../pages/account/account';
-
+import Settings from '../pages/settings/settings';
 const realRoute = () =>{
     return(
     <BrowserRouter>
@@ -24,6 +24,7 @@ const realRoute = () =>{
         <Route path='/configuration/' element={<Configuration></Configuration>}></Route>
         <Route path='/restorePassword/' element={<RestorePassword></RestorePassword>}></Route>
         <Route path='/account/' element={<Account></Account>}></Route>
+        <Route path='/settings/' element={<Settings></Settings>}></Route>
         <Route path='*' element={<h1>ERROR 404</h1>}></Route>
 
     </Routes>

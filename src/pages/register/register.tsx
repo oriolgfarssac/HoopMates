@@ -1,6 +1,6 @@
 import '../../styles/register.css';
 import { Link, useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import Users from '../../data/accounts';
 
 interface User {
   userName: string;
@@ -11,23 +11,20 @@ interface User {
   position: string;
   favourite: string;
   userImg: string;
+  state: boolean;
+  instagram: string;
+  twitter: string;
 }
 
 const Register: React.FC = () => {
   const history = useNavigate();
 
-  const [alertMessage, setAlertMessage] = useState<string>('');
-  const [showAlert, setShowAlert] = useState<boolean>(false);
+  const users = [...Users];
 
-  const displayAlert = (message: string) => {
-    setAlertMessage(message);
-    setShowAlert(true);
-  };
-
-  const closeAlert = () => {
-    setShowAlert(false);
-    history('/signUp/');
-  };
+  const isValidEmail = (email:any) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
   const createAccount = () => {
     const email: HTMLInputElement | null = document.getElementById('email') as HTMLInputElement | null;
@@ -37,6 +34,10 @@ const Register: React.FC = () => {
     if(email.value == "" || password.value == ""){
       alert("Please fill the following inputs.");
     }
+    else if (!isValidEmail(email.value)) {
+      alert('Please introduce an email.')
+    }
+  
     else{
       const newUser: User = {
         userName: '',
@@ -47,14 +48,18 @@ const Register: React.FC = () => {
         position: '',
         favourite: '',
         userImg: '/icons/usuario.png',
+        state: false,
+        instagram: '',
+        twitter: '',
       };
 
       let storedUsers = localStorage.getItem('usuaris');
       const storedUsersReal: User[] = storedUsers ? JSON.parse(storedUsers) : [];
       storedUsersReal.push(newUser);
-
+      localStorage.setItem('usuaris', JSON.stringify(users));
       localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
-      displayAlert("You've been registered correctly!" + " Now please Sign In:");
+      history('/signUp/');
+      alert("You've been registered correctly!")
       console.log(storedUsersReal);
     }
     }
@@ -63,14 +68,6 @@ const Register: React.FC = () => {
   return (
     <>
       <main className="container-fluid">
-      {showAlert && (
-        <div className="alertBox">
-          <div className="alertContent">
-            <h1 className='alert'>{alertMessage}</h1>
-          </div>
-          <button onClick={closeAlert} className='closeButton'>Sign In</button>
-        </div>
-      )}
         <img src="/icons/usuario.png" alt="" className='imgUser'/>
         <br />
         <h1 className='title'>Account Register</h1>

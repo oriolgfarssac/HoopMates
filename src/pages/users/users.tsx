@@ -24,16 +24,17 @@ const Users: React.FC = () => {
       <header className='header'>
         <Link to={'/account/'} className='account'><img src="/icons/usuario.png" className='account' /></Link>
         <h1 className='t1'>Hoop Players</h1>
-        <Link to={''} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
+        <Link to={'/settings/'} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
       </header>
       <ol className='list'>
       {storedUsersReal.map((user: any) => (
       <li  className='list-item'>
       <Accounts
+      instagram={user.instagram}
       username={user.userName}
       positon={user.position}
       favourite={user.favourite}
-      img={user.userImg}
+      twitter={user.twitter}
       />
       </li>
 ))}

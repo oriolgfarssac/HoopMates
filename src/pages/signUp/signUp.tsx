@@ -6,17 +6,16 @@ import {useEffect} from 'react'
 const signUp = () =>{
 
   useEffect(() => {
-    
+
     const storedUsers = localStorage.getItem('usuaris');
     
     if (storedUsers) {
       try {
         const storedUsersReal = JSON.parse(storedUsers);
-        
+        console.log(storedUsersReal);
         storedUsersReal.forEach((user: any) => {
           user.loged = false;
         });
-        
         localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
       } catch (error) {
         console.error('Error parsing stored users:', error);
@@ -32,6 +31,11 @@ const signUp = () =>{
 
     const createAccount = () => {
         history('/register/');
+    }
+
+    const isValidEmail = (email:any) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
     }
 
 
@@ -53,7 +57,10 @@ const signUp = () =>{
       if (email && password) {
         if (email.value === '' || password.value === '') {
           alert('empty values');
-        } else {
+        }else if (!isValidEmail(email.value)) {
+          alert('Please introduce an email.')
+        } 
+        else {
           const user = storedUsersReal.find((thing: any) => (
             (thing.email === email.value && thing.password === password.value) ||
             (thing.username === email.value && thing.password === password.value)
@@ -62,8 +69,14 @@ const signUp = () =>{
           if (user) {
             user.loged = true;
             localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
+            if(user.state == false){
             alert('Login success');
             history('/account/');
+            }
+            else if(user.state == true){
+            alert('Login success');
+            history('/courts/');
+            }
             console.log(storedUsersReal);
           } else {
             alert('Login failed');
@@ -89,7 +102,6 @@ const signUp = () =>{
         <br />
         <button className='signIn-button' onClick={checkUser}> Sign in </button>
         <Link to={'/restorePassword/'} className='passwordForget'>Forgot your password?</Link>
-        <button className='google-button'><img src="/icons/google.png" alt="google-logo" className="google-logo"/> Sign in with Google  </button>
         </main>
         </>
     );
