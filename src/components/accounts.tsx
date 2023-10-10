@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/accounts.css'
-import { useEffect } from 'react';
 interface AccountsProps {
   username: string;
   positon: string;
@@ -10,21 +9,6 @@ interface AccountsProps {
 }
 
 const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, instagram, twitter}) => {
-  
-  useEffect(() => {
-    let storedUsersReal: any[] = [];
-    const getStoredU = localStorage.getItem("usuaris");
-    
-
-    if (getStoredU) {
-      try {
-        storedUsersReal = JSON.parse(getStoredU);
-      } catch (error) {
-        console.error("Error parsing stored users:", error);
-      }
-    }
-
-  }, []);
 
   const goInstagram = () => {
     window.open(`https://www.instagram.com/${instagram}/`);
