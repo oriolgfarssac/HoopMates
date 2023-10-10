@@ -77,8 +77,8 @@ const account = () => {
     }
   }
 
-  const goBack = () =>{
-    history('/courts/');
+    const goBack = () =>{
+      history('/courts/');
     }
         
   return (
@@ -128,7 +128,7 @@ const account = () => {
         <br />
         <button className="buttonAccount" onClick={saveChange}>Save Changes</button>
         <br />
-        <img src="../public/icons/flecha.png" className="icon3" onClick={goBack}/>
+        <img src="/icons/flecha.png" className="icon3" onClick={goBack}/>
       </div>
     </>
   );
