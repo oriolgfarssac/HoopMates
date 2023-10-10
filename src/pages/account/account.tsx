@@ -4,16 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 const account = () => {
   const history = useNavigate();
-  const img = "/icons/usuario.png";
   const [userNameR, setUserName] = useState();
   const [instagramR, setInstagram] = useState();
   const [twitterR, setTwitter] = useState();
   const [position, setPosition] = useState();
   const [favourite, setFavourite] = useState();
-  
-  const changeImg = () =>{
-    
-  }
 
   useEffect(() => {
     const getStoredU = localStorage.getItem("usuaris");
@@ -81,11 +76,14 @@ const account = () => {
       } 
     }
   }
+
+  const goBack = () =>{
+    history('/courts/');
+    }
         
   return (
     <>
       <div className="profileMain">
-      <img src={img} alt="" className="profileImg" onClick={changeImg}/>
       <h1 className="userAccoutName">{userNameR}</h1>
         <br />
         <div className="inputContainer">
@@ -130,6 +128,7 @@ const account = () => {
         <br />
         <button className="buttonAccount" onClick={saveChange}>Save Changes</button>
         <br />
+        <img src="/public/icons/flecha.png" className="icon3" onClick={goBack}/>
       </div>
     </>
   );
