@@ -175,7 +175,16 @@ body {
 }
 
 .navIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-inline: auto;
-    height: 35px;
-    width: 35px;
+    height: 100%;
+    width: auto;
+}
+
+.imgIcon{
+    width: 50%;
+    height: auto;
 }
