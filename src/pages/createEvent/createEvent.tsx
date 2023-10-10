@@ -25,7 +25,7 @@ const createEvent: React.FC = () => {
                     gameCourt: String(court.value),
                     gameDate: String(date.value),
                 };
-
+                
                 let storedEvents = localStorage.getItem('events');
                 const storedUsersReal: neWEvent[] = storedEvents ? JSON.parse(storedEvents) : [];
                 storedUsersReal.push(newNewEvent);
