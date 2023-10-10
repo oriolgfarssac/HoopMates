@@ -59,7 +59,6 @@ const Register: React.FC = () => {
       localStorage.setItem('usuaris', JSON.stringify(users));
       localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
       history('/signUp/');
-      alert("You've been registered correctly!")
       console.log(storedUsersReal);
     }
     }

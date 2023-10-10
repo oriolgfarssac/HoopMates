@@ -28,7 +28,7 @@ const HotCourts: React.FC = () => {
           <Link to={'/account/'} className='account'>
             <img src="/icons/usuario.png" className='account' alt="User Account" />
           </Link>
-          <h1 className='t1'>Favourite Courts</h1>
+          <h1 className='t1'>Liked Courts</h1>
           <Link to={''} className='account'>
           <Link to={'/settings/'} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
           </Link>

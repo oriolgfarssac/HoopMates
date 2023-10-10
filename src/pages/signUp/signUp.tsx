@@ -70,11 +70,9 @@ const signUp = () =>{
             user.loged = true;
             localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
             if(user.state == false){
-            alert('Login success');
             history('/account/');
             }
             else if(user.state == true){
-            alert('Login success');
             history('/courts/');
             }
             console.log(storedUsersReal);

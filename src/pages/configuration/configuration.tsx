@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../../styles/configuration.css'
 const configuration = () =>{
 
     return(
@@ -7,91 +7,30 @@ const configuration = () =>{
 <main className='mainContainer11'>
       <header className='header'>
         <Link to={'/account/'} className='account'><img src="/icons/usuario.png" className='account' /></Link>
-        <h1 className='t1'> Support </h1>
+        <h1 className='t1'> Support & FAQ </h1>
         <Link to={'/settings/'} className='account'><img src="/icons/ajustes.png" className='account'/></Link>
       </header>
       <ol className='list'>
-      <div id="accordion">
-        <div className="card">
-          <div className="card-header" id="headingOne">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Collapsible Group Item #1
-              </button>
-            </h5>
-          </div>
-
-          <div
-            id="collapseOne"
-            className="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Content for Collapsible Group Item #1
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-header" id="headingTwo">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Collapsible Group Item #2
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            className="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Content for Collapsible Group Item #2
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-header" id="headingThree">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Collapsible Group Item #3
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            className="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Content for Collapsible Group Item #3
-            </div>
-          </div>
-        </div>
-      </div>
-      </ol>
+        <li className="info1">
+          <h2>Que és Hoop Mates?</h2>
+          <p className="info11">
+          Hoop Mates és una emocionant aplicació web creada per Oriol G.Farssac, com a projecte final per a The IT Academy. Aquesta innovadora aplicació web, està dissenyada per als amants del bàsquet que desitgen explorar i aprofitar al màxim les pistes públiques de Barcelona. Amb Hoop Mates, la comunitat de bàsquet de Barcelona té a la seva disposició una eina única que facilita la recerca, la descoberta i la connexió amb les pistes de la ciutat.
+          </p>
+        </li>
+        <li className="info1">
+          <h2>Que podem fer?</h2>
+          <p className="info11">
+          Hoop Mates et permet explorar una àmplia varietat de pistes de bàsquet a Barcelona. Ja sigui que estiguis cercant pistes a l'aire lliure o en instal·lacions cobertes, aquesta aplicació et proporciona informació detallada sobre la seva ubicació, disponibilitat i més.
+          </p>
+        </li>
+        <li className="info1">
+          <h2>Rebra actualitzacións?</h2>
+          <p className="info11">
+          Si, Hoop Mates, a mesura que anem millorant la vostra experiència, tenim previstes diverses actualitzacions emocionants per a Hoop Mates. L'objectiu principal és convertir Hoop Mates en una PWA (Progressive Web App). Què significa això? Una PWA és una aplicació web que es pot descarregar al vostre dispositiu mòbil i funcionarà com una aplicació nativa.
+          </p>
+        </li>
+<br />
+  </ol>
     <footer className='footer'>
       <Link to="/courts/" className='navIcon'><img src="/icons/main.png" alt="" className='navIcon'/></Link>
       <Link to="/rank/" className='navIcon'><img src="/icons/users.png" alt="" className='navIcon'/></Link>
