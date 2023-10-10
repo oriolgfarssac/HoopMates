@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const account = () => {
   const history = useNavigate();
-  const [img, setImg] = useState<string>("/icons/usuario.png");
+  const img = "/icons/usuario.png";
   const [userNameR, setUserName] = useState();
   const [instagramR, setInstagram] = useState();
   const [twitterR, setTwitter] = useState();
