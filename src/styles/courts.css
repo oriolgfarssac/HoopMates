@@ -1,5 +1,5 @@
 .mainContainer11 {
-    height: 100vh;
+    height: calc(100vh - (headerHeight + footerHeight));
     flex: 1;
     background-color: #ac9fff;
     overflow-y: auto;
