@@ -1,6 +1,6 @@
 .mainContainer11 {
-    height: calc(100% - (headerHeight + footerHeight));
-    flex: 1;
+    height: 100vh;
+    max-height: 915px;
     background-color: #ac9fff;
-    overflow-y: auto;
+    overflow-y:visible;
 }
