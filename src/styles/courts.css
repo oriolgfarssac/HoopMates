@@ -2,5 +2,5 @@
     height: 100vh;
     max-height: 915px;
     background-color: #ac9fff;
-    overflow-y:visible;
+    overflow-y: scroll;
 }
