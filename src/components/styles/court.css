@@ -19,7 +19,7 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
     align-items: center;
-    border: #ffffff solid 4px;
+    border: #ffffff solid 3px;
 }
 
 .name{
@@ -161,12 +161,12 @@ body {
 }
 
 .footer{
-    width: 100%;
-    min-height: 55px;
     margin-bottom: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
+    height: 70px;
+    width: 100%;
     background-color: #5143a8;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -175,16 +175,7 @@ body {
 }
 
 .navIcon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-inline: auto;
-    height: 100%;
-    width: auto;
-}
-
-.imgIcon{
-    width: 50%;
-    height: auto;
+    height: 35px;
+    width: 35px;
 }

@@ -1,6 +1,7 @@
 .mainContainer11 {
-    height: 100vh;
-    max-height: 915px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-color: #ac9fff;
     overflow-y: scroll;
 }

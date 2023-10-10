@@ -1,3 +1,4 @@
+import '../../components/styles/court.css'
 import '../../styles/courts.css'
 import React from 'react';
 import Court from '../../components/court';
@@ -27,11 +28,11 @@ const Courts: React.FC = () => {
 ))}
       </ol>
     <footer className='footer'>
-      <Link to="/courts/" className='navIcon'><img src="/icons/main1.png" alt="" className='imgIcon'/></Link>
-      <Link to="/rank/" className='navIcon'><img src="/icons/users.png" alt="" className='imgIcon'/></Link>
-      <Link to="/hotCourts/" className='navIcon'><img src="/icons/pelota.png" alt="" className='imgIcon'/></Link>
-      <Link to="/chat/" className='navIcon'><img src="/icons/team.png" alt="" className='imgIcon'/></Link>
-      <Link to="/configuration/" className='navIcon'><img src="/icons/help.png" alt="" className='imgIcon'/></Link>
+      <Link to="/courts/" className='navIcon'><img src="/icons/main1.png" alt="" className='navIcon'/></Link>
+      <Link to="/rank/" className='navIcon'><img src="/icons/users.png" alt="" className='navIcon'/></Link>
+      <Link to="/hotCourts/" className='navIcon'><img src="/icons/pelota.png" alt="" className='navIcon'/></Link>
+      <Link to="/chat/" className='navIcon'><img src="/icons/team.png" alt="" className='navIcon'/></Link>
+      <Link to="/configuration/" className='navIcon'><img src="/icons/help.png" alt="" className='navIcon'/></Link>
     </footer>
     </main>
   );
