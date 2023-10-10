@@ -27,6 +27,7 @@ const account = () => {
     });
     
     if (realUser) {
+      
       setUserName(realUser.userName);
       setInstagram(realUser.instagram);
       setFavourite(realUser.favourite);
@@ -58,8 +59,8 @@ const account = () => {
       const posisio = document.getElementById('position') as HTMLInputElement | null;
       const preferit = document.getElementById('court') as HTMLInputElement | null;
       if(name && posisio && preferit){
-      if(name.value == ""){
-        alert("Please introduce a username.");
+      if(name.value == "" || posisio.value == 'Court Positions' ||preferit.value == 'Court Locations'){
+        alert("Complete your profile before saving.");
       }
       else if(name && instagram && posisio && preferit && twitterHT){
         realUser.userName = name.value;
@@ -78,7 +79,7 @@ const account = () => {
   }
 
     const goBack = () =>{
-      history('/courts/');
+        history('/courts/');
     }
         
   return (
@@ -102,7 +103,7 @@ const account = () => {
         </div>
         <br />
         <div className="inputContainer">
-        <img src="/icons/position.png" className="iconInput" />
+        <img src="/icons/position.png" className="iconInput" id="position"/>
         <select name="Position" className="accountInput" defaultValue={position} id="position">
         <option disabled selected>Court Positions</option>
           <option value="Pivot" className="userOption">Pivot</option>

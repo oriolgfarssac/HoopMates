@@ -29,13 +29,25 @@ const configuration = () =>{
           Si, Hoop Mates, a mesura que anem millorant la vostra experiència, tenim previstes diverses actualitzacions emocionants per a Hoop Mates. L'objectiu principal és convertir Hoop Mates en una PWA (Progressive Web App). Què significa això? Una PWA és una aplicació web que es pot descarregar al vostre dispositiu mòbil i funcionarà com una aplicació nativa.
           </p>
         </li>
+        <li className="info1">
+          <h2>Contact</h2>
+          <p className="info11">
+          Email: oriolgfarssac@gmail.com
+          </p>
+          <p className="info11">
+          Instagram: @oriolgfarssac
+          </p>
+          <p className="info11">
+          Tel: +34 611492301
+          </p>
+        </li>
 <br />
   </ol>
     <footer className='footer'>
       <Link to="/courts/" className='navIcon'><img src="/icons/main.png" alt="" className='navIcon'/></Link>
       <Link to="/rank/" className='navIcon'><img src="/icons/users.png" alt="" className='navIcon'/></Link>
       <Link to="/hotCourts/" className='navIcon'><img src="/icons/pelota.png" alt="" className='navIcon'/></Link>
-      <Link to="/chat/" className='navIcon'><img src="/icons/team.png" alt="" className='navIcon'/></Link>
+      <Link to="/Events/" className='navIcon'><img src="/icons/team.png" alt="" className='navIcon'/></Link>
       <Link to="/configuration/" className='navIcon'><img src="/icons/help1.png" alt="" className='navIcon'/></Link>
     </footer>
     </main>

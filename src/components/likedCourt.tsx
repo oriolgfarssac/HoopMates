@@ -19,6 +19,12 @@ const [index, setIndex] = useState(0);
 const hearth = ['/icons/quit.png','/icons/playyy.png',];
 const [rCourt,setRCourt] = useState(Number);
 
+window.onload = () =>{
+  const findedCourt = court.find((pista: any) => pista.name === courtName);
+  const updatedPeople = findedCourt.people;
+  setRCourt(updatedPeople);
+}
+
 useEffect(() => {
   const getStoredU = localStorage.getItem('usuaris');
   let storedUsersReal: any[] = [];

@@ -1,0 +1,73 @@
+
+.gameTitle{
+    margin-top: 10px;
+    color: white;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-wrap:balance;
+    color: white;
+    background-color: #AC9FFF;
+}
+
+.infoGame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 174, 81);
+}
+
+.itemGame{
+    margin-top: 10px;
+    color: white;
+}
+
+.itemGame2{
+    margin: auto;
+    height: 100%;
+    color: white;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.create{
+    margin-top: 20px;
+    color: white;
+    background-color: #2F2562;
+    width: 85%;
+    min-height: 50px;
+    height: auto;
+    border: solid 3px #2F2562;
+    border-radius: 5px;
+}
+
+.createContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.eventPic{
+    width: 70px;
+}
+
+.titleCreate{
+    color: white;
+    font-weight: bold;
+}
