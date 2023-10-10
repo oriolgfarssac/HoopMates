@@ -2,10 +2,10 @@ import '../../components/styles/game.css'
 import { useNavigate } from 'react-router-dom';
 
 interface neWEvent {
-    gameName: any;
-    gameDescription: any;
-    gameCourt: any;
-    gameDate: any;
+    gameName: string;
+    gameDescription: string;
+    gameCourt: string;
+    gameDate: string;
 }
 
 const createEvent: React.FC = () => {
@@ -20,10 +20,10 @@ const createEvent: React.FC = () => {
         if (name && description && court && date) { // Check if elements are not null
             if (name.value !== '' && description.value !== '' && court.value !== '' && date.value !== '') {
                 const newNewEvent: neWEvent = {
-                    gameName: name.value,
-                    gameDescription: description.value,
-                    gameCourt: court.value,
-                    gameDate: date.value,
+                    gameName: String(name.value),
+                    gameDescription: String(description.value),
+                    gameCourt: String(court.value),
+                    gameDate: String(date.value),
                 };
 
                 let storedEvents = localStorage.getItem('events');
