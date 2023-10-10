@@ -128,7 +128,7 @@ const account = () => {
         <br />
         <button className="buttonAccount" onClick={saveChange}>Save Changes</button>
         <br />
-        <img src="/public/icons/flecha.png" className="icon3" onClick={goBack}/>
+        <img src="../public/icons/flecha.png" className="icon3" onClick={goBack}/>
       </div>
     </>
   );

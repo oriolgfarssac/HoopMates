@@ -50,13 +50,13 @@ const Settings = () =>{
         <br />
             <h1 className="title"> Settings </h1>
             <br />
-            <button onClick={switchAccount} className="button2"><img src="/public/icons/canviar.png" className="icon2" /> Switch Account </button>
+            <button onClick={switchAccount} className="button2"><img src="../public/icons/canviar.png" className="icon2" /> Switch Account </button>
             <br />
-            <button onClick={logOut} className="button21"><img src="/public/icons/salir.png" className="icon2" /> Signout </button>
+            <button onClick={logOut} className="button21"><img src="../public/icons/salir.png" className="icon2" /> Signout </button>
             <br />
-            <button onClick={eliminateAccount} className="button23"><img src="/public/icons/borrar.png" className="icon2" /> Delete Account </button>
+            <button onClick={eliminateAccount} className="button23"><img src="../public/icons/borrar.png" className="icon2" /> Delete Account </button>
             <br />
-            <img src="/public/icons/flecha.png" className="icon3" onClick={goBack}/>
+            <img src="../public/icons/flecha.png" className="icon3" onClick={goBack}/>
         </div>
         </>
     );
