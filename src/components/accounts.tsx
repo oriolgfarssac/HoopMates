@@ -10,10 +10,11 @@ interface AccountsProps {
 }
 
 const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, instagram, twitter}) => {
-
+  
   useEffect(() => {
-    const getStoredU = localStorage.getItem("usuaris");
     let storedUsersReal: any[] = [];
+    const getStoredU = localStorage.getItem("usuaris");
+    
 
     if (getStoredU) {
       try {
@@ -22,10 +23,6 @@ const Accounts: React.FC<AccountsProps> = ({ username, positon, favourite, insta
         console.error("Error parsing stored users:", error);
       }
     }
-
-    const realUser = storedUsersReal.find((user) => {
-      return user.loged === true;
-    });
 
   }, []);
 
