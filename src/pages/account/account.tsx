@@ -68,7 +68,6 @@ const account = () => {
         realUser.favourite = preferit.value;
         realUser.instagram = instagram.value;
         realUser.twitter = twitterHT.value;
-        console.log(twitterHT.value);
         realUser.state = true;
         localStorage.setItem('usuaris', JSON.stringify(storedUsersReal));
         console.log(realUser);
@@ -103,13 +102,13 @@ const account = () => {
         </div>
         <br />
         <div className="inputContainer">
-        <img src="/icons/position.png" className="iconInput" id="position"/>
-        <select name="Position" className="accountInput" defaultValue={position} id="position">
-        <option disabled selected>Court Positions</option>
-          <option value="Pivot" className="userOption">Pivot</option>
-          <option value="Playmaker" className="userOption">Playmaker</option>
-          <option value="Wing" className="userOption">Wing</option>
-        </select>
+        <img src="/icons/position.png" className="iconInput" id="positionImg" />
+<select name="Position" className="accountInput" defaultValue={position} id="position">
+  <option disabled selected>Court Positions</option>
+  <option value="Pivot" className="userOption">Pivot</option>
+  <option value="Base" className="userOption">Base</option>
+  <option value="Aler" className="userOption">Aler</option>
+</select>
         </div>
         <br />
         <div className="inputContainer">
